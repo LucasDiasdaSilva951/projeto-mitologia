@@ -1,0 +1,70 @@
+@charset "UTF-8";
+
+@font-face { 
+    font-family: "Cinzel Decorative";
+    src: url("../fontes-de-texto/CinzelDecorative-Black.ttf");
+} /* Fonte para logotipo e títulos ornamentais */
+
+@font-face {
+    font-family: "Cinzel";
+    src: url("../fontes-de-texto/Cinzel-VariableFont_wght.ttf");
+} /* Fonte para títulos de página e nomes das criaturas */
+
+@font-face {
+    font-family: "Cormorant";
+    src: url("../fontes-de-texto/CormorantGaramond-VariableFont_wght.ttf");
+} /* Fonte para subtítulos e narrativas */
+
+@font-face {
+    font-family: "IM Fell";
+    src: url("../fontes-de-texto/IMFellEnglish-Regular.ttf");
+} /* Fonte para registros e documentos antigos */
+
+@font-face {
+    font-family: "Lora";
+    src: url("../fontes-de-texto/Lora-VariableFont_wght.ttf");
+} /* Fonte para descrições e textos longos */
+
+:root {
+    /* Fontes de texto */
+    --fonte1: "Cinzel Decorative";
+    --fonte2: "Cinzel";
+    --fonte3: "Cormorant";
+    --fonte4: "IM Fell";
+    --fonte5: "Lora";
+    
+    /* Cores */
+    --cor1: rgb(170, 94, 75);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: row wrap;
+    background-image: url("../outras-imagens/fundo-lava.jpg");
+    box-shadow: 1px 1px 0px rgba(0, 0, 0, 0.432);
+}
+
+header > h1 {
+    color: var(--cor1);
+    font-family: var(--fonte1);
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.432);
+    font-size: 25px;
+}
+
+header > span {
+    display: block;
+    color: white;
+}
+
+header > nav {
+    display: none;
+}
