@@ -35,6 +35,9 @@
     
     /* Cores */
     --cor1: rgb(170, 94, 75);
+    --cor2: rgb(209, 209, 154);
+    --cor3: rgb(58, 33, 5);
+    --vermelho: red;
 }
 
 * {
@@ -65,6 +68,175 @@ header > span {
     color: white;
 }
 
+header > span:hover {
+    color: var(--vermelho);
+    cursor: pointer;
+}
+
 header > nav {
     display: none;
+}
+
+header > nav > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+    font-family: var(--fonte2);
+    font-weight: bolder;
+}
+
+header > nav > div > * {
+    padding-inline: 5px;
+    font-size: 17px;
+    text-decoration: none;
+    color: white;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.575);
+}
+
+header > nav > div > *:hover {
+    color: var(--vermelho);
+    transition: 0.3s;
+}
+
+main {
+    box-shadow: 1px 1px 0px rgba(0, 0, 0, 0.466);
+}
+
+section#inicio {
+    padding: 20px;
+    display: flex;
+    flex-flow: column wrap;
+    background-image: url("../outras-imagens/castelo-medieval-img.png");
+    background-position: center center;
+    position: relative;
+}
+
+section#inicio > h1 {
+    font-family: var(--fonte2);
+    font-weight: bolder;
+    color: var(--cor2);
+    text-shadow: 1px 1px 0px black;
+    padding: 20px;
+    background-image: url("../outras-imagens/fundo-fogo.jpg");
+    background-position: center center;
+}
+
+section#inicio > p {
+    font-family: var(--fonte5);
+    color: white;        
+    text-shadow: 1px 1px 0px black;
+    padding: 20px;
+    background-image: url("../outras-imagens/fundo-fogo.jpg");
+}
+
+section#inicio > button {
+    margin: 15px;
+    padding: 15px;
+    border: 20px solid transparent;
+    border-image: url("../bordas/borda-fogo.png") 450 stretch;
+    border-image-width: auto;
+    background-color: transparent;
+}
+
+section#inicio > button > a {
+    text-decoration: none;
+    color: white;
+    font-family: var(--fonte2);
+    font-size: 20px;
+}
+
+section#inicio > button > a:hover {
+    color: var(--vermelho);
+    transition: 0.4s;
+}
+
+section.paginas {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    background-image: url("../outras-imagens/fundo-medieval-pagprincipal.jpg");
+}
+
+section.paginas > div.seções {
+    padding: 25px;
+    margin: 15px;
+    text-align: center;
+    width: 90%;
+    box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.568);
+}
+
+section.paginas > div#mitologia {
+    background-image: linear-gradient(to right, rgb(45, 75, 45), rgb(56, 50, 50));
+}
+
+section.paginas > div#folclore {
+    background-image: linear-gradient(to left, rgb(54, 53, 53), rgb(44, 44, 85));
+}
+
+section.paginas > div#horror-cosmico {
+    background-image: linear-gradient(to left, rgb(14, 13, 13), blue);
+}
+
+section.paginas > div#criaturas-livros {
+    background-image: linear-gradient(to right, darkgray, white);
+}
+
+section.paginas > div#criaturas-jogos-lendas {
+    background-image: linear-gradient(to bottom, rgb(37, 73, 37), rgb(230, 230, 171));
+}
+
+section.paginas > div.seções > a {
+    font: bolder 30px var(--fonte1);
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.534);
+    text-decoration: none;
+}
+
+section.paginas > div#mitologia > a {
+    color: rgb(66, 207, 66);
+}
+
+section.paginas > div#folclore > a {
+    color: darkgray;
+}
+
+section.paginas > div#horror-cosmico > a {
+    color: rgb(225, 226, 233);
+}
+
+section.paginas > div#criaturas-livros > a {
+    color: rgb(78, 70, 112);
+}
+
+section.paginas > div#criaturas-jogos-lendas > a {
+    color: rgb(59, 68, 42);
+}
+
+section.paginas > div#mitologia > a:hover {
+    color: rgb(135, 206, 135);
+    transition: 0.4s;
+} 
+
+section.paginas > div#folclore > a:hover {
+    color: azure;
+    transition: 0.4s;
+}
+
+section.paginas > div#horror-cosmico > a:hover {
+    color: cadetblue;
+    transition: 0.4s;
+}
+
+section.paginas > div#criaturas-livros > a:hover {
+    color: rgb(59, 41, 18);
+    transition: 0.4s;
+}
+
+section.paginas > div#criaturas-jogos-lendas > a:hover {
+    color: darkgreen;
+    transition: 0.4s;
+}
+
+section.paginas > div.seções > img {
+    height: 150px;
 }
