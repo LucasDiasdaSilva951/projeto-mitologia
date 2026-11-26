@@ -1,0 +1,191 @@
+@charset "UTF-8";
+
+@font-face { 
+    font-family: "Cinzel Decorative";
+    src: url("../fontes-de-texto/CinzelDecorative-Black.ttf");
+} /* Fonte para logotipo e títulos ornamentais */
+
+@font-face {
+    font-family: "Cinzel";
+    src: url("../fontes-de-texto/Cinzel-VariableFont_wght.ttf");
+} /* Fonte para títulos de página e nomes das criaturas */
+
+@font-face {
+    font-family: "Cormorant";
+    src: url("../fontes-de-texto/CormorantGaramond-VariableFont_wght.ttf");
+} /* Fonte para subtítulos e narrativas */
+
+@font-face {
+    font-family: "IM Fell";
+    src: url("../fontes-de-texto/IMFellEnglish-Regular.ttf");
+} /* Fonte para registros e documentos antigos */
+
+@font-face {
+    font-family: "Lora";
+    src: url("../fontes-de-texto/Lora-VariableFont_wght.ttf");
+} /* Fonte para descrições e textos longos */
+
+:root {
+    /* Fontes de texto */
+    --fonte1: "Cinzel Decorative";
+    --fonte2: "Cinzel";
+    --fonte3: "Cormorant";
+    --fonte4: "IM Fell";
+    --fonte5: "Lora";
+
+    --cor1defundo: rgb(59, 46, 11);
+    --cor2defundo: rgb(32, 30, 30);
+    --cortituloprincipal: rgb(153, 153, 96);
+}
+
+main {
+    background-image: linear-gradient(to left, var(--cor1defundo), var(--cor2defundo));
+    padding: 50px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+main > div {
+    background-color: rgba(0, 0, 0, 0.438);
+    width: 100%;
+    padding: 15px;
+    text-align: center;
+}
+
+main > h1 {
+    font: 45px var(--fonte1);
+    color: var(--cortituloprincipal);
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.521);
+}
+
+main > p {
+    font: 20px var(--fonte5);
+    color: white;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.521);
+}
+
+section.criaturas > a {
+    text-align: center;
+    text-decoration: none;
+    font: 50px var(--fonte2);
+    color: white;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.521);
+    padding: 5px;
+}
+
+section.criaturas > a > div {
+    padding: 0;
+    margin: 0;
+    box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.575);
+}
+
+section.criaturas > a > div > p {
+    padding: 50px;
+}
+
+section.criaturas > a#dracula > div:hover {
+    background-color: rgb(63, 10, 10);
+    border: 5px solid darkred;
+    transition: 0.4s;
+}
+
+section.criaturas > a#balrog > div:hover {
+    background-color: rgb(65, 47, 35);
+    border: 5px solid rgb(245, 219, 153);
+    transition: 0.4s;
+}
+
+section.criaturas > a#frankstein > div:hover {
+    background-color: rgb(211, 182, 127);
+    border: 5px solid rgb(133, 133, 133);
+    transition: 0.4s;
+}
+
+section.criaturas > a#banshee > div:hover {
+    background-color: rgb(95, 91, 91);
+    border: 5px solid rgb(255, 255, 255);
+    transition: 0.4s;
+}
+
+section.criaturas > a#cu-sith > div:hover {
+    background-color: rgb(70, 155, 112);
+    border: 5px solid rgb(2, 97, 2);
+    transition: 0.4s;
+}
+
+section.criaturas > a#kelpie > div:hover {
+    background-color: rgb(240, 227, 227);
+    border: 5px solid rgb(135, 42, 172);
+    transition: 0.4s;
+}
+
+section.criaturas > a#puca > div:hover {
+    background-color: rgb(63, 40, 10);
+    border: 5px solid rgb(241, 241, 241);
+    transition: 0.4s;
+}
+
+section.criaturas > a#dracula > div {
+    background-color: rgb(65, 34, 34);
+    border: 5px solid rgb(131, 89, 89);
+}
+
+section.criaturas > a#dracula > div > img {
+    border: 5px solid red;
+}
+
+section.criaturas > a#balrog > div {
+    background-color: rgb(58, 26, 5);
+    border: 5px solid rgb(116, 77, 77);
+}
+
+section.criaturas > a#balrog > div > img {
+    border: 5px solid rgb(20, 20, 19);
+}
+
+section.criaturas > a#frankstein > div {
+    background-color: rgb(19, 29, 3);
+    border: 5px solid rgb(185, 180, 170);
+}
+
+section.criaturas > a#banshee > div {
+    background-color: rgb(77, 61, 50);
+    border: 5px solid rgb(209, 204, 204);
+}
+
+section.criaturas > a#banshee > div > img {
+    border: 5px solid rgb(131, 125, 125);
+}
+
+section.criaturas > a#cu-sith > div {
+    background-color: rgb(75, 116, 58);
+    border: 5px solid rgb(141, 134, 134);
+}
+
+section.criaturas > a#cu-sith > div > img {
+    border: 5px solid rgb(154, 207, 110);
+}
+
+section.criaturas > a#kelpie > div {
+    background-color: rgb(70, 56, 47);
+    border: 5px solid rgb(116, 77, 77);
+}
+
+section.criaturas > a#kelpie > div > img {
+    border: 5px solid rgb(139, 129, 129);
+}
+
+section.criaturas > a#puca > div {
+    background-color: rgb(172, 167, 164);
+    border: 5px solid rgb(116, 77, 77);
+}
+
+section.criaturas > a#puca > div > img {
+    border: 5px solid rgb(124, 93, 36);
+}
+
+section.criaturas > a > div > img {
+    height: 400px;
+    width: 400px;
+}
